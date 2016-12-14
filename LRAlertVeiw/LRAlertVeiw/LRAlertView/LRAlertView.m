@@ -1,5 +1,5 @@
 //
-//  LRActionSheetView.m
+//  LRAlertView.m
 //  ShowDemo
 //
 //  Created by LR on 16/9/1.
@@ -293,8 +293,8 @@ CGFloat buttonSpacerHeight = 0;
 
 - (IBAction)customIOSActionSheetDialogButtonTouchUpInside:(id)sender {
     //代理回调
-    if ((self.delegate != NULL) && ([self.delegate respondsToSelector:@selector(lRAlertViewButtonTouchUpInside:clickedButtonAtIndex:)])) {
-        [self.delegate lRAlertViewButtonTouchUpInside:self clickedButtonAtIndex:[sender tag]];
+    if ((self.delegate != NULL) && ([self.delegate respondsToSelector:@selector(lrAlertViewButtonTouchUpInside:clickedButtonAtIndex:)])) {
+        [self.delegate lrAlertViewButtonTouchUpInside:self clickedButtonAtIndex:[sender tag]];
     }
     
     //block回调
@@ -305,9 +305,9 @@ CGFloat buttonSpacerHeight = 0;
 
 //遵守自身的协议 实现代理方法，实现点击按钮的默认操作：关闭
 // Default button behaviour
-- (void)lRAlertViewButtonTouchUpInside:(id)actionSheetView clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)lrAlertViewButtonTouchUpInside:(id)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"Button Clicked! %d, %d", (int)buttonIndex, (int)[actionSheetView tag]);
+    NSLog(@"Button Clicked! %d, %d", (int)buttonIndex, (int)[alertView tag]);
     [self close];
 }
 

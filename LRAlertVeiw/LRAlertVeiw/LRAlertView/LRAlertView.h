@@ -1,5 +1,5 @@
 //
-//  LRActionSheetView.h
+//  LRAlertView.h
 //  ShowDemo
 //
 //  Created by LR on 16/9/1.
@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, LRAlertViewStyle){
 
 @protocol LRAlertViewDelegate <NSObject>
 
-- (void)lRAlertViewButtonTouchUpInside:(id)actionSheetView clickedButtonAtIndex:(NSInteger)buttonIndex;
+- (void)lrAlertViewButtonTouchUpInside:(id)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end
 
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, LRAlertViewStyle){
 @property (nonatomic, assign) BOOL useMotionEffects;
 @property (nonatomic, assign) LRAlertViewStyle style;
 
-@property (copy) void (^onButtonTouchUpInside)(LRAlertView *actionSheetView, int buttonIndex);
+@property (copy) void (^onButtonTouchUpInside)(LRAlertView *alertView, int buttonIndex);
 
 
 - (void)show;
