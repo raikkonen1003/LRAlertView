@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0EAB091E5EB77600495EC1 /* LRAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC0EAB081E5EB77600495EC1 /* LRAlertView.m */; };
 		FCF008D51DC0AEB400241D49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF008D41DC0AEB400241D49 /* main.m */; };
 		FCF008D81DC0AEB400241D49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF008D71DC0AEB400241D49 /* AppDelegate.m */; };
 		FCF008DB1DC0AEB400241D49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF008DA1DC0AEB400241D49 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		FCF008E31DC0AEB400241D49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF008E11DC0AEB400241D49 /* LaunchScreen.storyboard */; };
 		FCF008EE1DC0AEB500241D49 /* LRAlertVeiwTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF008ED1DC0AEB500241D49 /* LRAlertVeiwTests.m */; };
 		FCF008F91DC0AEB600241D49 /* LRAlertVeiwUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF008F81DC0AEB600241D49 /* LRAlertVeiwUITests.m */; };
-		FCF0090C1DC0AF3500241D49 /* LRAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF0090B1DC0AF3500241D49 /* LRAlertView.m */; };
 		FCF009111DC0AFE500241D49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF0090F1DC0AFE500241D49 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC0EAB071E5EB77600495EC1 /* LRAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAlertView.h; sourceTree = "<group>"; };
+		FC0EAB081E5EB77600495EC1 /* LRAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAlertView.m; sourceTree = "<group>"; };
 		FCF008D01DC0AEB400241D49 /* LRAlertVeiw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRAlertVeiw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF008D41DC0AEB400241D49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCF008D61DC0AEB400241D49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,8 +53,6 @@
 		FCF008F41DC0AEB600241D49 /* LRAlertVeiwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LRAlertVeiwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF008F81DC0AEB600241D49 /* LRAlertVeiwUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRAlertVeiwUITests.m; sourceTree = "<group>"; };
 		FCF008FA1DC0AEB600241D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FCF0090A1DC0AF3500241D49 /* LRAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAlertView.h; sourceTree = "<group>"; };
-		FCF0090B1DC0AF3500241D49 /* LRAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAlertView.m; sourceTree = "<group>"; };
 		FCF009101DC0AFE500241D49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC0EAB061E5EB77600495EC1 /* LRAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				FC0EAB071E5EB77600495EC1 /* LRAlertView.h */,
+				FC0EAB081E5EB77600495EC1 /* LRAlertView.m */,
+			);
+			name = LRAlertView;
+			path = ../../LRAlertView;
+			sourceTree = "<group>";
+		};
 		FCF008C71DC0AEB400241D49 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +114,7 @@
 		FCF008D21DC0AEB400241D49 /* LRAlertVeiw */ = {
 			isa = PBXGroup;
 			children = (
-				FCF009091DC0AF3500241D49 /* LRAlertView */,
+				FC0EAB061E5EB77600495EC1 /* LRAlertView */,
 				FCF008D61DC0AEB400241D49 /* AppDelegate.h */,
 				FCF008D71DC0AEB400241D49 /* AppDelegate.m */,
 				FCF008D91DC0AEB400241D49 /* ViewController.h */,
@@ -142,15 +152,6 @@
 				FCF008FA1DC0AEB600241D49 /* Info.plist */,
 			);
 			path = LRAlertVeiwUITests;
-			sourceTree = "<group>";
-		};
-		FCF009091DC0AF3500241D49 /* LRAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				FCF0090A1DC0AF3500241D49 /* LRAlertView.h */,
-				FCF0090B1DC0AF3500241D49 /* LRAlertView.m */,
-			);
-			path = LRAlertView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCF008DB1DC0AEB400241D49 /* ViewController.m in Sources */,
-				FCF0090C1DC0AF3500241D49 /* LRAlertView.m in Sources */,
+				FC0EAB091E5EB77600495EC1 /* LRAlertView.m in Sources */,
 				FCF008D81DC0AEB400241D49 /* AppDelegate.m in Sources */,
 				FCF008D51DC0AEB400241D49 /* main.m in Sources */,
 			);
@@ -523,6 +524,7 @@
 				FCF008FF1DC0AEB600241D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCF009001DC0AEB600241D49 /* Build configuration list for PBXNativeTarget "LRAlertVeiwTests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +533,7 @@
 				FCF009021DC0AEB600241D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FCF009031DC0AEB600241D49 /* Build configuration list for PBXNativeTarget "LRAlertVeiwUITests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +542,7 @@
 				FCF009051DC0AEB600241D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
