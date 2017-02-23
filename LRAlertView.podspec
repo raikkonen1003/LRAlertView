@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/raikkonen1003/LRAlertView.git", :tag => "#{s.version}" }
 
-  s.source_files = "LRAlertView/*.{h,m}"
+  s.source_files = "LRAlertView/LRAlertView/*.{h,m}"
   
   s.requires_arc = true
 
