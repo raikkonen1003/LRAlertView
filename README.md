@@ -7,6 +7,6 @@
 
 ### CocoaPods
 
-1. 在 Podfile 中添加  `pod 'YYKit'`。
+1. 在 Podfile 中添加  `pod 'LRAlertView'`。
 2. 执行 `pod install` 或 `pod update`。
-3. #import "LRAlertView.h"。
+3. `#import "LRAlertView.h"`。
