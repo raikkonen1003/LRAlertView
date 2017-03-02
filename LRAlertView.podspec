@@ -11,13 +11,13 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   
 
-  s.author             = { "raikkonen1003" => "" }
+  s.author             = { "raikkonen1003" => "raikkonen1003@163.com" }
 
   s.platform     = :ios, "7.0"
 
   s.ios.deployment_target = "7.0"
 
-  s.source       = { :git => "https://github.com/raikkonen1003/LRAlertView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/raikkonen1003/LRAlertView.git", :tag => s.version.to_s }
 
   s.source_files = "LRAlertView/*.{h,m}"
   
